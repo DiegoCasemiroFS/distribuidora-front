@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Distribuidora</title>
+    <title>Gerenciamento de Produtos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -18,15 +18,26 @@
                 <li><button onclick="location.href='usuario.html'">Contato</button></li>
             </ul>
         </nav>
+        
+        <button onclick="mostrarFormulario('cadastro')">Cadastrar Produto</button>
+        <button onclick="mostrarFormulario('atualizar')">Alterar Preço/Estoque</button> <!-- Correção aqui -->
+        <button onclick="mostrarFormulario('procurar')">Procurar Produto</button> <!-- Correção aqui -->
+        <button onclick="mostrarFormulario('lista')">Listar Produtos</button>
+        <button onclick="mostrarFormulario('deletar')">Deletar Produto</button> <!-- Correção aqui -->
+
     </header>
+    
 
     <main>
-        
+        <div id="conteudo"></div>
     </main>
     
+
     <footer>
-        <p>&copy; 2023 Distribuidora. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Distribuidora. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="produto.js"></script>
 </body>
 
 </html>
