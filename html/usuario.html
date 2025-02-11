@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribuidora</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Usuários</h1>
+        <nav>
+            <ul>
+                <li><button onclick="location.href='index.html'">Home</button></li>
+                <li><button onclick="location.href='movimentacao.html'">Movimentação</button></li>
+                <li><button onclick="location.href='produto.html'">Produtos</button></li>
+                <li><button onclick="location.href='usuario.html'">Usuario</button></li>
+            </ul>
+        </nav>
+
+        <button onclick="mostrarFormularioUsuario('login')">Login</button> 
+        <button onclick="mostrarFormularioUsuario('procurar')">Procurar por Id</button>
+        <button onclick="mostrarFormularioUsuario('procurarPorEmail')">Procurar por email</button>
+        <button onclick="mostrarFormularioUsuario('lista')">Listar Usuários</button>
+        <button onclick="mostrarFormularioUsuario('cadastro')">Cadastrar Usuário</button>
+        <button onclick="mostrarFormularioUsuario('altera')">Alterar Usuário</button> 
+        <button onclick="mostrarFormularioUsuario('deleta')">Deletar Usuário</button>
+    </header>
+
+    <main>
+        <div id="conteudo"></div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Distribuidora. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../js/usuario.js"></script>
+</body>
+</html>
