@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Distribuidora</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
 
 <body>
@@ -19,20 +20,21 @@
             </ul>
         </nav>
 
-        <button onclick="mostrarFormulario('procurar')">Procurar por Id</button>
-        <button onclick="mostrarFormulario('lista')">Listar Todas</button>
-        <button onclick="mostrarFormulario('venda')">Venda</button>
-        <button onclick="mostrarFormulario('compra')">Compra</button> 
-        <button onclick="mostrarFormulario('deletar')">Deletar Movimentação</button>
+        <button onclick="mostrarFormularioMovimentacao('procurar')">Procurar por Id</button>
+        <button onclick="mostrarFormularioMovimentacao('lista')">Listar Movimentações</button>
+        <button onclick="mostrarFormularioMovimentacao('venda')">Venda</button>
+        <button onclick="mostrarFormularioMovimentacao('compra')">Compra</button> 
+        <button onclick="mostrarFormularioMovimentacao('deleta')">Deletar Movimentação</button>
     </header>
 
     <main>
-        
+        <div id="conteudo"></div>
     </main>
     
     <footer>
-        <p>&copy; 2023 Distribuidora. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Distribuidora. Todos os direitos reservados.</p>
     </footer>
-</body>
 
+    <script src="../js/movimentacao.js"></script>
+</body>
 </html>
